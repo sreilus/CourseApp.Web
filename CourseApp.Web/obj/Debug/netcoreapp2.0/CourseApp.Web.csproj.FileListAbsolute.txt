@@ -1,0 +1,11 @@
+C:\Users\Muhammet\source\repos\CourseApp.Web\CourseApp.Web\bin\Debug\netcoreapp2.0\CourseApp.Web.deps.json
+C:\Users\Muhammet\source\repos\CourseApp.Web\CourseApp.Web\bin\Debug\netcoreapp2.0\CourseApp.Web.runtimeconfig.json
+C:\Users\Muhammet\source\repos\CourseApp.Web\CourseApp.Web\bin\Debug\netcoreapp2.0\CourseApp.Web.runtimeconfig.dev.json
+C:\Users\Muhammet\source\repos\CourseApp.Web\CourseApp.Web\bin\Debug\netcoreapp2.0\CourseApp.Web.dll
+C:\Users\Muhammet\source\repos\CourseApp.Web\CourseApp.Web\obj\Debug\netcoreapp2.0\CourseApp.Web.csprojAssemblyReference.cache
+C:\Users\Muhammet\source\repos\CourseApp.Web\CourseApp.Web\obj\Debug\netcoreapp2.0\CourseApp.Web.csproj.CoreCompileInputs.cache
+C:\Users\Muhammet\source\repos\CourseApp.Web\CourseApp.Web\obj\Debug\netcoreapp2.0\CourseApp.Web.AssemblyInfoInputs.cache
+C:\Users\Muhammet\source\repos\CourseApp.Web\CourseApp.Web\obj\Debug\netcoreapp2.0\CourseApp.Web.AssemblyInfo.cs
+C:\Users\Muhammet\source\repos\CourseApp.Web\CourseApp.Web\bin\Debug\netcoreapp2.0\CourseApp.Web.pdb
+C:\Users\Muhammet\source\repos\CourseApp.Web\CourseApp.Web\obj\Debug\netcoreapp2.0\CourseApp.Web.dll
+C:\Users\Muhammet\source\repos\CourseApp.Web\CourseApp.Web\obj\Debug\netcoreapp2.0\CourseApp.Web.pdb
