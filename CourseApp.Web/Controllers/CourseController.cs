@@ -7,20 +7,20 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace CourseApp.Web.Controllers
 {
-    public class CourseController : Controller
-    {
+	public class CourseController : Controller
+	{
 		//couse/index
-        public ViewResult Index()
-        {
+		public ViewResult Index()
+		{
 			int hour = DateTime.Now.Hour;
-			ViewBag.Greeting = hour > 12? "Good Afternoon" : "Good night";
-            return View("MyView");
-        }
+			ViewBag.Greeting = hour > 12 ? "Good Afternoon" : "Good night";
+			return View("MyView");
+		}
 
 		//couse/list
 		public ViewResult List()
 		{
-			var liste= Repository.Students.Where(x => x.WillAttend == true);
+			var liste = Repository.Students.Where(x => x.WillAttend == true);
 			return View(liste);
 		}
 
@@ -34,8 +34,15 @@ namespace CourseApp.Web.Controllers
 		[HttpPost]
 		public ViewResult Apply(Student student)
 		{
-			Repository.AddStudent(student);
-			return View("Thanks",student);
+			if (ModelState.IsValid)
+			{
+				Repository.AddStudent(student);
+				return View("Thanks", student);
+			}
+			else
+			{
+				return View();
+			}
 		}
 	}
 }

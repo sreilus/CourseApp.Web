@@ -9,9 +9,10 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>Thanks</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" />
 </head>
 <body>
-    <h2>@Model.Name</h2>
+    <h2>Teşekkürler @Model.Name</h2>
     <hr/>
     @if(Model.WillAttend==true)
     {
@@ -22,6 +23,6 @@
         @:kursa katulunuz
     }
 
-    Kursa katulanları listele <a asp-action="List">Listele</a>
+    Kursa katulanları listele <a asp-action="List" class="nav-link">Listele</a>
 </body>
 </html>

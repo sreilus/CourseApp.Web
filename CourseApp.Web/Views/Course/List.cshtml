@@ -9,8 +9,31 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>List</title>
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" />
 </head>
 <body>
-    couse list
+    <h3 class="text-center">Kursa Katılanlar</h3>
+    <table class="table table-bordered table-sm table-responsive table-striped text-center">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>WillAttend</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var student in Model)
+            {
+            <tr>
+                <td>@student.Name</td>
+                <td>@student.Email</td>
+                <td>@student.Phone</td>
+                <td>@student.WillAttend</td>
+            </tr>
+            }
+        </tbody>
+    </table>
 </body>
 </html>

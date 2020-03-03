@@ -9,13 +9,20 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>MyView</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" />
 </head>
 <body>
-    @ViewBag.Greeting student?
+    <div class="text-center">
+    <h3>
+        @ViewBag.Greeting student?
+    </h3>
     
-    <p>
+    
+    <h4>
         hopefdfsfs   
-    </p>
-    <a asp-action="apply">Apply the course</a>
+    </h4>
+
+    <a asp-action="apply" class="btn btn-primary">Apply the course</a>
+    </div>
 </body>
 </html>
