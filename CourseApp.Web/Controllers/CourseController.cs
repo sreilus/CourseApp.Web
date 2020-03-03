@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using CourseApp.Web.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CourseApp.Web.Controllers
@@ -19,13 +20,22 @@ namespace CourseApp.Web.Controllers
 		//couse/list
 		public ViewResult List()
 		{
-			return View();
+			var liste= Repository.Students.Where(x => x.WillAttend == true);
+			return View(liste);
 		}
 
+		[HttpGet]
 		//couse/apply
 		public ViewResult Apply()
 		{
 			return View();
+		}
+
+		[HttpPost]
+		public ViewResult Apply(Student student)
+		{
+			Repository.AddStudent(student);
+			return View("Thanks",student);
 		}
 	}
 }
