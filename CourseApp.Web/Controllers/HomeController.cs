@@ -5,10 +5,11 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using CourseApp.Web.Models;
 
-namespace CourseApp.Web
+namespace CourseApp.Web.Controllers
 {
     public class HomeController : Controller
     {
+
         public IActionResult Index()
         {
 			var course = new Course();
